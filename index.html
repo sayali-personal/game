@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Will You Be My Valentine? 💘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Cute, rounded fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating hearts background -->
+  <div class="floating-hearts" aria-hidden="true" id="floatingHearts"></div>
+
+  <!-- Confetti hearts layer -->
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+  <div class="app" aria-live="polite">
+    <div class="card">
+      <div class="card-inner">
+        <!-- Intro Screen -->
+        <section class="screen screen-intro active" id="screenIntro">
+          <h1 class="handwritten">Hi, you ✨</h1>
+          <p class="subtitle">I’ve been meaning to ask you something kind of important...</p>
+
+          <div class="envelope-wrapper" id="introEnvelope">
+            <div class="envelope" aria-hidden="true">
+              <div class="envelope-base"></div>
+              <div class="envelope-flap"></div>
+              <div class="envelope-heart"></div>
+              <div class="sparkles">
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+                <div class="sparkle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" id="btnOpen">
+              Open 💌
+            </button>
+          </div>
+        </section>
+
+        <!-- Question Screen -->
+        <section class="screen screen-question" id="screenQuestion" aria-hidden="true">
+          <div class="question-emoji">💖</div>
+          <h2 class="question-title"><span class="handwritten">Manoj, </span>Will you be my Valentine?</h2>
+          <p class="question-subtitle">There is only one correct answer... choose wisely. 😉</p>
+
+          <div class="question-buttons">
+            <button class="btn btn-yes" id="btnYes">Yes 💕</button>
+
+            <div class="btn-no-wrapper" id="noWrapper">
+              <div class="no-tooltip" id="noTooltip">Are you sure? 🥺</div>
+              <button class="btn btn-secondary btn-no" id="btnNo">
+                No 😢
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Yes Screen -->
+        <section class="screen screen-yes" id="screenYes" aria-hidden="true">
+          <div class="yes-icon">💘</div>
+          <h2 class="yes-title">Yay!! I knew you’d say yes!</h2>
+          <p class="yes-message">
+            Dekha kitna easy tha <span class="handwritten">Manoj</span>. 💞
+          </p>
+
+          <textarea class="note-input" id="loveNote" aria-label="Write a romantic message">
+Bring me snacks, warm hugs, and endless cheesy jokes. 💕
+          </textarea>
+          <p class="note-helper">Sikho Sayali G se</p>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" id="btnReplay">Play again 💞</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
